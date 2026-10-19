@@ -1,0 +1,52 @@
+{
+  "id": "tatakai.extension.latino",
+  "name": "Latino",
+  "type": "custom",
+  "version": "1.0.1",
+  "browserDomains": ["az-animex.com", "mirrored.to", "www2.pelisforte.se", "sololatino.net", "yupmanga.com", "shademanga.com", "mp4.nu"],
+  "author": "Snozxyx",
+  "description": "Spanish/Latino extension. Anime streaming: Az-Animex (Mirrored.to mirrors: StreamTape and friends, Spanish hardsub), PelisForte (mp4.nu HLS with Spanish Latino/Castellano/Subtitulado options), SoloLatino (multi-server embeds, browser bypass). Manga reading: YupManga (Spanish image-proxy reader) and ShadeManga (clean public JSON API with CDN pages).",
+  "categories": [
+    "Anime Stream",
+    "Manga"
+  ],
+  "capabilities": [
+    "manga",
+    "preview",
+    "websiteIndex"
+  ],
+  "priority": 1,
+  "apiServer": {
+    "namespace": "latino",
+    "contract": "streaming-sources-v3",
+    "routes": [
+      "sources",
+      "stream",
+      "manga/chapters",
+      "manga/pages"
+    ],
+    "healthPath": "/health"
+  },
+  "sideloaded": true,
+  "permissions": [
+    "network:domain:az-animex.com",
+    "network:domain:www.az-animex.com",
+    "network:domain:dire.az-animex.com",
+    "network:domain:mirrored.to",
+    "network:domain:www.mirrored.to",
+    "network:domain:streamtape.com",
+    "network:domain:www2.pelisforte.se",
+    "network:domain:mp4.nu",
+    "network:domain:sololatino.net",
+    "network:domain:www.sololatino.net",
+    "network:domain:yupmanga.com",
+    "network:domain:www.yupmanga.com",
+    "network:domain:shademanga.com",
+    "network:domain:www.shademanga.com",
+    "network:domain:cdn.shademanga.com",
+    "network:domain:api.ani.zip",
+    "network:domain:graphql.anilist.co",
+    "network:domain:mp4upload.com",
+    "network:domain:yourupload.com"
+  ]
+}
