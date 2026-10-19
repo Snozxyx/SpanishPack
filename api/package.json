@@ -1,6 +1,6 @@
 {
   "name": "latino-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "Latino in API form — runs the Latino scraping/mapping bundle as an HTTP server for browser testing.",
